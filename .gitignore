@@ -1,0 +1,83 @@
+#   .tfignore usage
+#
+#   # begins a comment line
+#   The * and ? wildcards are supported.
+#   A filespec is recursive unless prefixed by the / character.
+#   ! negates a filespec (files that match the pattern are not ignored)
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+bin
+obj
+
+#include nuget executable
+!NuGet.exe
+
+#nuget packages directory
+packages
+
+#include package target files which may be required for msbuild process
+!packages/*.targets
+
+# ReSharper
+_ReSharper*/
+*.ReSharper
+
+# TeamCity
+_TeamCity*
+
+# DotCover is a Code Coverage Tool
+*.dotCover
+
+# Click-Once directory
+publish/
+
+# Publish Web Output
+*.Publish.xml
+*.pubxml
+
+# Backup & report files from converting an old project file to a newer
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+.hg/*
+.hg
+.git
+.git/*
+bin/*
+Debug/*
+obj/*
+Release/*
+*resharper.*/*
+Profile/*
+*.docstates
+*.user
+*.suo
+*.xap
+*.sdf
+*.opensdf
+*.log
+*.psess
+*.tlog
+*.orig
+**/*.pdb
+*.cab
+*.msi
+*.VC.db
+Durango/*
+*Durango/*
+Durango/*
+ipch/*
